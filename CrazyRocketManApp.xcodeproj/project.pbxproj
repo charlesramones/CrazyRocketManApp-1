@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB2CB155162FF04300A4BF8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2CB154162FF04300A4BF8B /* UIKit.framework */; };
+		DB2CB157162FF04300A4BF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2CB156162FF04300A4BF8B /* Foundation.framework */; };
+		DB2CB159162FF04300A4BF8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2CB158162FF04300A4BF8B /* CoreGraphics.framework */; };
+		DB2CB15F162FF04300A4BF8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB2CB15D162FF04300A4BF8B /* InfoPlist.strings */; };
+		DB2CB161162FF04300A4BF8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CB160162FF04300A4BF8B /* main.m */; };
+		DB2CB165162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB2CB150162FF04300A4BF8B /* CrazyRocketManApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyRocketManApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2CB154162FF04300A4BF8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB2CB156162FF04300A4BF8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB2CB158162FF04300A4BF8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB2CB15C162FF04300A4BF8B /* CrazyRocketManApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrazyRocketManApp-Info.plist"; sourceTree = "<group>"; };
+		DB2CB15E162FF04300A4BF8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB2CB160162FF04300A4BF8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB2CB162162FF04300A4BF8B /* CrazyRocketManApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyRocketManApp-Prefix.pch"; sourceTree = "<group>"; };
+		DB2CB163162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrazyRocketManAppAppDelegate.h; sourceTree = "<group>"; };
+		DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyRocketManAppAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB2CB14D162FF04300A4BF8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2CB155162FF04300A4BF8B /* UIKit.framework in Frameworks */,
+				DB2CB157162FF04300A4BF8B /* Foundation.framework in Frameworks */,
+				DB2CB159162FF04300A4BF8B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB2CB145162FF04300A4BF8B = {
+			isa = PBXGroup;
+			children = (
+				DB2CB15A162FF04300A4BF8B /* CrazyRocketManApp */,
+				DB2CB153162FF04300A4BF8B /* Frameworks */,
+				DB2CB151162FF04300A4BF8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB2CB151162FF04300A4BF8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CB150162FF04300A4BF8B /* CrazyRocketManApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB2CB153162FF04300A4BF8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CB154162FF04300A4BF8B /* UIKit.framework */,
+				DB2CB156162FF04300A4BF8B /* Foundation.framework */,
+				DB2CB158162FF04300A4BF8B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB2CB15A162FF04300A4BF8B /* CrazyRocketManApp */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CB163162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.h */,
+				DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */,
+				DB2CB15B162FF04300A4BF8B /* Supporting Files */,
+			);
+			path = CrazyRocketManApp;
+			sourceTree = "<group>";
+		};
+		DB2CB15B162FF04300A4BF8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB2CB15C162FF04300A4BF8B /* CrazyRocketManApp-Info.plist */,
+				DB2CB15D162FF04300A4BF8B /* InfoPlist.strings */,
+				DB2CB160162FF04300A4BF8B /* main.m */,
+				DB2CB162162FF04300A4BF8B /* CrazyRocketManApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB2CB14F162FF04300A4BF8B /* CrazyRocketManApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2CB168162FF04300A4BF8B /* Build configuration list for PBXNativeTarget "CrazyRocketManApp" */;
+			buildPhases = (
+				DB2CB14C162FF04300A4BF8B /* Sources */,
+				DB2CB14D162FF04300A4BF8B /* Frameworks */,
+				DB2CB14E162FF04300A4BF8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyRocketManApp;
+			productName = CrazyRocketManApp;
+			productReference = DB2CB150162FF04300A4BF8B /* CrazyRocketManApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB2CB147162FF04300A4BF8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CrazyRocketManApp;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Regie G. Pinat";
+			};
+			buildConfigurationList = DB2CB14A162FF04300A4BF8B /* Build configuration list for PBXProject "CrazyRocketManApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB2CB145162FF04300A4BF8B;
+			productRefGroup = DB2CB151162FF04300A4BF8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB2CB14F162FF04300A4BF8B /* CrazyRocketManApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB2CB14E162FF04300A4BF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2CB15F162FF04300A4BF8B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB2CB14C162FF04300A4BF8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2CB161162FF04300A4BF8B /* main.m in Sources */,
+				DB2CB165162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB2CB15D162FF04300A4BF8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB2CB15E162FF04300A4BF8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB2CB166162FF04300A4BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB2CB167162FF04300A4BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB2CB169162FF04300A4BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRocketManApp/CrazyRocketManApp-Prefix.pch";
+				INFOPLIST_FILE = "CrazyRocketManApp/CrazyRocketManApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB2CB16A162FF04300A4BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyRocketManApp/CrazyRocketManApp-Prefix.pch";
+				INFOPLIST_FILE = "CrazyRocketManApp/CrazyRocketManApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB2CB14A162FF04300A4BF8B /* Build configuration list for PBXProject "CrazyRocketManApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2CB166162FF04300A4BF8B /* Debug */,
+				DB2CB167162FF04300A4BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2CB168162FF04300A4BF8B /* Build configuration list for PBXNativeTarget "CrazyRocketManApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2CB169162FF04300A4BF8B /* Debug */,
+				DB2CB16A162FF04300A4BF8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB2CB147162FF04300A4BF8B /* Project object */;
+}
