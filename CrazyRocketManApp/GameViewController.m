@@ -22,7 +22,7 @@ float ypos;
 float maxDistanceBetweenStep ;
 float minDistanceBetweenStep ;
 float distanceBetweenSteps=200,distanceyBetweenSteps = 50;
-float accelmoveX=0,deltaX=0;
+float accelmoveX=0,deltaX=0,jump=0;
 
 BOOL delayTime = YES;
 BOOL NeedsTojump = NO;
@@ -105,7 +105,7 @@ CGPoint rocketManNewPosition;
            [arrayOfPlatforms addObject:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"platform.png"]]];
            //platform Object rect
            [[arrayOfPlatforms objectAtIndex:i] setFrame:CGRectMake(xpos, ypos, stepRect.width, stepRect.height)];
-           [[arrayOfPlatforms objectAtIndex:i] setBackgroundColor:[UIColor redColor]];
+          // [[arrayOfPlatforms objectAtIndex:i] setBackgroundColor:[UIColor redColor]];
            
            ypos = ypos - distanceyBetweenSteps;
        }
@@ -186,9 +186,9 @@ CGPoint rocketManNewPosition;
 
 -(void)jump
 {
+     //rocketManNewPosition.x += 2;
     
-    
-     rocketManNewPosition.x += deltaX*40;
+     //rocketManNewPosition.x += deltaX*40;
     
     if(!mainJumping){
 		//then start jumping
@@ -231,19 +231,29 @@ CGPoint rocketManNewPosition;
         
 	  //if main hits the platform, then stop jumping
         //Check Each Platform if hit
+        
+     
+ if(jumpSpeed >0)
+{
+  //  UIImageView *checkplatform = [arrayOfPlatforms objectAtIndex:2];
         for (UIImageView *checkplatform in arrayOfPlatforms)
         {
+        
             
-            
-            if(rocketManNewPosition.y >=  checkplatform.frame.origin.y - rocketMan.frame.size.height/2 +10 && [self CheckifJump:checkplatform]  && jumpSpeed>0)
+            if(rocketManNewPosition.y >=  checkplatform.frame.origin.y - rocketMan.frame.size.height/2 +10  && [self CheckifJump:checkplatform]  &&  jumpSpeed  >0 )
             {
+         
+                NSLog(@"%f",jump);
                 mainJumping = NO;
                 rocketManNewPosition.y = checkplatform.frame.origin.y - rocketMan.frame.size.height/2 +10;
                 rocketMan.center = CGPointMake(rocketManNewPosition.x, rocketManNewPosition.y);
-                
+                    jump++;
+                 break;
              
             }
         }
+    
+}
     
     }
 }
@@ -257,7 +267,7 @@ CGPoint rocketManNewPosition;
 -(BOOL)CheckifJump:(UIImageView *)platform{
    
  
-    if (rocketMan.center.x >= platform.frame.origin.x && rocketMan.center.x <= (platform.frame.origin.x + platform.bounds.size.width))
+    if (rocketMan.center.x >= platform.frame.origin.x && rocketMan.center.x <= (platform.frame.origin.x + platform.bounds.size.width) && CGRectIntersectsRect(platform.frame,rocketMan.frame))
     {
         
         return YES;
@@ -300,6 +310,21 @@ CGPoint rocketManNewPosition;
 
     accelerometer.delegate = nil;
     
+
+}
+
+
+
+-(IBAction)moveCharbutton:(UIButton *)sender
+{
+    if (sender.tag==1)
+    {
+        rocketManNewPosition.x-= 5;
+    }
+    else
+    {
+    rocketManNewPosition.x+=5;
+    }
 
 }
 @end

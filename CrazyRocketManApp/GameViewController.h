@@ -24,4 +24,6 @@
 -(void)jump;
 -(BOOL)CheckifJump:(UIImageView *)platform;
 -(void)startbouncing;
+-(IBAction)moveCharbutton:(UIButton *)sender;
+
 @end
