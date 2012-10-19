@@ -13,6 +13,10 @@
 		DB2CB15F162FF04300A4BF8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB2CB15D162FF04300A4BF8B /* InfoPlist.strings */; };
 		DB2CB161162FF04300A4BF8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CB160162FF04300A4BF8B /* main.m */; };
 		DB2CB165162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */; };
+		DB2CB16E162FF0A300A4BF8B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2CB16C162FF0A300A4BF8B /* GameViewController.m */; };
+		DB2CB16F162FF0A300A4BF8B /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2CB16D162FF0A300A4BF8B /* GameViewController.xib */; };
+		DB9C9CF216313BCE008EE343 /* BH2.png in Resources */ = {isa = PBXBuildFile; fileRef = DB9C9CF116313BCE008EE343 /* BH2.png */; };
+		DBC94A1F1630F35B00095D84 /* platform.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC94A1E1630F35B00095D84 /* platform.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		DB2CB162162FF04300A4BF8B /* CrazyRocketManApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyRocketManApp-Prefix.pch"; sourceTree = "<group>"; };
 		DB2CB163162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrazyRocketManAppAppDelegate.h; sourceTree = "<group>"; };
 		DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyRocketManAppAppDelegate.m; sourceTree = "<group>"; };
+		DB2CB16B162FF0A300A4BF8B /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		DB2CB16C162FF0A300A4BF8B /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		DB2CB16D162FF0A300A4BF8B /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		DB9C9CF116313BCE008EE343 /* BH2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BH2.png; sourceTree = "<group>"; };
+		DBC94A1E1630F35B00095D84 /* platform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = platform.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,11 @@
 			children = (
 				DB2CB163162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.h */,
 				DB2CB164162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m */,
+				DB2CB16B162FF0A300A4BF8B /* GameViewController.h */,
+				DB2CB16C162FF0A300A4BF8B /* GameViewController.m */,
+				DB2CB16D162FF0A300A4BF8B /* GameViewController.xib */,
+				DBC94A1E1630F35B00095D84 /* platform.png */,
+				DB9C9CF116313BCE008EE343 /* BH2.png */,
 				DB2CB15B162FF04300A4BF8B /* Supporting Files */,
 			);
 			path = CrazyRocketManApp;
@@ -143,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2CB15F162FF04300A4BF8B /* InfoPlist.strings in Resources */,
+				DB2CB16F162FF0A300A4BF8B /* GameViewController.xib in Resources */,
+				DBC94A1F1630F35B00095D84 /* platform.png in Resources */,
+				DB9C9CF216313BCE008EE343 /* BH2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +172,7 @@
 			files = (
 				DB2CB161162FF04300A4BF8B /* main.m in Sources */,
 				DB2CB165162FF04300A4BF8B /* CrazyRocketManAppAppDelegate.m in Sources */,
+				DB2CB16E162FF0A300A4BF8B /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +280,7 @@
 				DB2CB16A162FF04300A4BF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
