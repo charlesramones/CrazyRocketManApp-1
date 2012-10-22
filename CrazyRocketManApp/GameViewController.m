@@ -22,7 +22,7 @@ float ypos;
 float maxDistanceBetweenStep ;
 float minDistanceBetweenStep ;
 float distanceBetweenSteps=200,distanceyBetweenSteps = 50;
-float accelmoveX=0,deltaX=0,jump=0;
+float accelmoveX=0,deltaX=0;
 
 BOOL delayTime = YES;
 BOOL NeedsTojump = NO;
@@ -242,12 +242,10 @@ CGPoint rocketManNewPosition;
             
             if(rocketManNewPosition.y >=  checkplatform.frame.origin.y - rocketMan.frame.size.height/2 +10  && [self CheckifJump:checkplatform]  &&  jumpSpeed  >0 )
             {
-         
-                NSLog(@"%f",jump);
-                mainJumping = NO;
+                         mainJumping = NO;
                 rocketManNewPosition.y = checkplatform.frame.origin.y - rocketMan.frame.size.height/2 +10;
                 rocketMan.center = CGPointMake(rocketManNewPosition.x, rocketManNewPosition.y);
-                    jump++;
+                  
                  break;
              
             }
@@ -305,6 +303,13 @@ CGPoint rocketManNewPosition;
 }
 
 
+
+
+
+
+
+
+
 -(void )dealloc
 {
 
@@ -315,11 +320,13 @@ CGPoint rocketManNewPosition;
 
 
 
+
+
 -(IBAction)moveCharbutton:(UIButton *)sender
 {
     if (sender.tag==1)
     {
-        rocketManNewPosition.x-= 5;
+    rocketManNewPosition.x-= 5;
     }
     else
     {
