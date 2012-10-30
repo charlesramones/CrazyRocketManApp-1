@@ -15,7 +15,7 @@
 @implementation GameViewController
 @synthesize arrayOfPlatforms;
 
-//G vars
+//G vars  test git hub
 float xpos =0;
 float ypos;
 
